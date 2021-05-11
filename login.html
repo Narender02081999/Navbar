@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+        }
+        label{
+            font-family: 'Times New Roman', Times, serif;
+            color:white;
+            font-size:20px;
+
+        }
+        body{
+            background-color: teal; 
+        }
+        h1{
+            background-color: white;
+            text-align: center;
+            font-size: x-large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        input{
+        shape-outside: margin-box;
+        font-style: arial;
+        border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>PLEASE FILL THE BELOW DETAILS TO GET STARTED</h1>
+    <table>
+    <form>
+        <div><label for="a">Username<span>*</span></label></div>
+       <div><input type="text" name="uname" id="a" placeholder="username"></div>
+       <div> <label for="d">mobileno<span>*</span></label></div>
+       <div> <input type="text" name="mobno" pattern="[0-9]{10}" placeholder="mobileno" id="d" required></div>
+
+       <div> <label for="b">Password<span>*</span></label></div>
+       <div> <input type="password" name="pwd" placeholder="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@,$]).{8}" id="b" required></div>
+       <div> <label for="c">emailID<span>*</span></label></div>
+       <div> <input type="email" name="em" id="c" placeholder="E-Mail"></div>
+       <div><label for="e">DOB<span>*</span></label></div>
+        <div><input type="date" name="dob" id="e" ></div>
+        <div>
+            <label for="f">gender<span>*</span></label>
+        </div>
+        <div>
+            <input type="radio" name="m" id="f">Male
+            <input type="radio" name="m" id="f">Female
+            <input type="radio" name="m" id="f">custom
+        </div>
+        <div><input type="submit" value="login"></div>
+    </form>
+</table>
+</body>
+</html>
